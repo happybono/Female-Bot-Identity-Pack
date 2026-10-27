@@ -65,7 +65,7 @@ It is caused by the game's auto-balance behavior, not by the profile data in thi
 Original `BotProfile.db` : Valve / Turtle Rock Studios.
 
 ## Copyright
-Copyright (C) 2002 Valve / Turtle Rock Studios.
+Copyright (C) 2002 Valve / Turtle Rock Studios.  
 Copyright (C) 2026 HappyBono. All Rights Reserved.
 
 
