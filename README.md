@@ -1,5 +1,5 @@
 # Female-Bot-Identity-Pack
-Female Bot Names - GIGN Japanese &amp; GSG9 English : A Mod for Counter-Strike: Condition Zero.
+Female Bot Names - GIGN Japanese &amp; GSG9 English : A Mod for Counter-Strike : Condition Zero.
 
 ## Description
 This is a drop-in `BotProfile.db` for Counter-Strike : Condition Zero. It adds female-named bots and ties each name to a fixed CT skin, so a name always matches the model you see.
