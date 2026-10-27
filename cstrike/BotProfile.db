@@ -1,0 +1,1108 @@
+//----------------------------------------------------------------------------
+// BotProfile.db
+// Author: Z.A.S BANANA GAMER, Turtle Rock Studios.
+//
+// This database defines bot "personalities". 
+// Feel free to edit it and define your own bots.
+//
+// Co-Author: HappyBono (Charlie Jaewoong Mun)
+// https://www.github.com/happybono/Female-Bot-Identity-Pack
+
+
+//----------------------------------------------------------------------------
+
+//
+// All profiles begin with this data and overwrite their own
+//
+Default
+	Skill = 50
+	Aggression = 50
+	ReactionTime = 0.3
+	AttackDelay = 0
+	Teamwork = 75
+	WeaponPreference = none
+	Cost = 0
+	Difficulty = NORMAL
+	VoicePitch = 100
+	Skin = 0
+End
+
+//----------------------------------------------------------------------------
+
+//
+// These templates inherit from Default and override with their values
+// The name of the template defines a type that is used by individual bot profiles
+//
+
+// weapon preference templates
+Template Rifle
+	WeaponPreference = m4a1
+	WeaponPreference = ak47
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = mp5
+End
+
+Template Punch
+	WeaponPreference = aug
+	WeaponPreference = sg552
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = mp5
+End
+
+Template Sniper
+	WeaponPreference = awp
+	WeaponPreference = sg550
+	WeaponPreference = g3sg1
+	WeaponPreference = scout
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = mp5
+End
+
+Template Power
+	WeaponPreference = m249
+	WeaponPreference = xm1014
+	WeaponPreference = m3
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = mp5
+End
+
+Template Shotgun
+	WeaponPreference = xm1014
+	WeaponPreference = m3
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = mp5
+End
+
+Template Shield
+	WeaponPreference = shield
+	WeaponPreference = m4a1			// in case shield is disallowed
+	WeaponPreference = ak47
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = mp5
+End
+
+Template Spray
+	WeaponPreference = p90
+	WeaponPreference = tmp
+	WeaponPreference = mac10
+	WeaponPreference = mp5
+End
+
+
+// skill templates
+Template Elite
+	Skill = 100
+	Aggression = 100
+	ReactionTime = 0.2
+	Cost = 4
+	Difficulty = EXPERT
+	VoicePitch = 85
+End
+
+Template Expert
+	Skill = 90
+	Aggression = 90
+	ReactionTime = 0.2
+	Cost = 4
+	Difficulty = EXPERT
+	VoicePitch = 88
+End
+
+Template VeryHard
+	Skill = 80
+	Aggression = 80
+	ReactionTime = 0.25
+	Cost = 3
+	Difficulty = HARD
+	VoicePitch = 92
+End
+
+Template Hard
+	Skill = 75
+	Aggression = 75
+	ReactionTime = 0.25
+	Cost = 3
+	Difficulty = HARD
+	VoicePitch = 94
+End
+
+Template Tough
+	Skill = 60
+	Aggression = 60
+	ReactionTime = 0.3		// 0.2 - 0.4
+	AttackDelay = 0.35		// 0.3 - 0.4
+	Cost = 2
+	Difficulty = NORMAL+HARD
+	VoicePitch = 96
+End
+
+Template Normal
+	Skill = 50
+	Aggression = 50
+	ReactionTime = 0.4		// 0.2 - 0.4
+	AttackDelay = 0.7			// 0.3 - 0.4
+	Cost = 2
+	Difficulty = NORMAL
+End
+
+Template Fair
+	Skill = 25
+	Aggression = 30
+	ReactionTime = 0.4		// 0.25 - 0.5
+	AttackDelay = 1.0			// 1.0 - 1.5f
+	Cost = 1
+	Difficulty = EASY+NORMAL
+	VoicePitch = 105
+End
+
+Template Easy
+	Skill = 0
+	Aggression = 20
+	ReactionTime = 0.5		// 0.25 - 0.5
+	AttackDelay = 1.5			// 1.0 - 1.5f
+	Cost = 1
+	Difficulty = EASY
+	VoicePitch = 110
+End
+
+//----------------------------------------------------------------------------
+//
+// These are the individual bot profiles, which inherit first from 
+// Default and then the specified Template(s), in order
+//
+
+Elite+Shotgun Crusher
+	Skin = 1
+	VoicePitch = 84
+End
+
+Elite+Punch Pheonix
+	Skin = 1
+	VoicePitch = 110
+End
+
+Elite+Power Rock
+	Skin = 1
+	VoicePitch = 80
+End
+
+Elite+Punch Shark
+	Skin = 3
+	VoicePitch = 90
+End
+
+Elite+Rifle Wolf
+	Skin = 3
+	VoicePitch = 98
+End
+
+Elite Gunner
+	Skin = 3
+	VoicePitch = 96
+End
+
+
+Expert+Rifle Arnold
+	Skin = 1
+	VoicePitch = 85
+End
+
+Expert+Rifle Brett
+	Skin = 3
+	VoicePitch = 100
+End
+
+Expert Kurt
+	Skin = 1
+	VoicePitch = 95
+End
+
+Expert+Sniper Kyle
+	Skin = 3
+	Cost = 5
+	VoicePitch = 115
+End
+
+Expert+Shotgun Moe
+	Skin = 1
+	VoicePitch = 87
+End
+
+Expert+Rifle Quade
+	Skin = 3
+	VoicePitch = 91
+End
+
+Expert+Rifle Quintin
+	Skin = 1
+	VoicePitch = 101
+End
+
+Expert Ringo
+	Skin = 3
+	VoicePitch = 112
+End
+
+Expert+Punch Rip
+	Skin = 1
+	VoicePitch = 99
+End
+
+Expert+Rifle Zach
+	Skin = 3
+	VoicePitch = 100
+End
+
+Expert+Rifle Vinny
+	Skin = 1
+	VoicePitch = 86
+End
+
+Expert+Sniper Zed
+	Skin = 3
+	Cost = 5
+	VoicePitch = 105
+End
+
+// VeryHard??
+
+Hard+Rifle Chad
+	Skin = 1
+	VoicePitch = 95
+End
+
+Hard+Rifle Chet
+	Skin = 3
+	VoicePitch = 90
+End
+
+Hard+Spray Gabe
+	Skin = 1
+	VoicePitch = 102
+End
+
+Hard+Shotgun Hank
+	Skin = 3
+	VoicePitch = 98
+End
+
+Hard+Rifle Ivan
+	Skin = 1
+	VoicePitch = 96
+End
+
+Hard+Punch Jim
+	Skin = 3
+	VoicePitch = 103
+End
+
+Hard+Punch Joe
+	Skin = 1
+	VoicePitch = 105
+End
+
+Hard+Rifle John
+	Skin = 3
+	VoicePitch = 97
+End
+
+Hard+Rifle Seth
+	Skin = 1
+	VoicePitch = 100
+End
+
+Hard+Rifle Tony
+	Skin = 3
+	VoicePitch = 84
+End
+
+Hard Tyler
+	Skin = 1
+	VoicePitch = 115
+End
+
+Hard+Rifle Victor
+	Skin = 3
+	VoicePitch = 120
+End
+
+Hard+Sniper Vladimir
+	Skin = 1
+	Cost = 4
+	VoicePitch = 97
+End
+
+Hard+Spray Zane
+	Skin = 3
+	VoicePitch = 103
+End
+
+Hard+Rifle Zim
+	Skin = 1
+	VoicePitch = 122
+End
+
+Tough+Sniper Adrian
+	Skin = 3
+	Cost = 3
+	VoicePitch = 120
+End
+
+Tough+Rifle Brad
+	Skin = 1
+	VoicePitch = 100
+End
+
+Tough+Rifle Connor
+	Skin = 3
+	VoicePitch = 104
+End
+
+Tough+Power Cory
+	Skin = 1
+	VoicePitch = 110
+End
+
+Tough+Rifle Dave
+	Skin = 3
+	VoicePitch = 98
+End
+
+Tough Dan
+	Skin = 1
+	VoicePitch = 100
+End
+
+Tough+Rifle Derek
+	Skin = 3
+	VoicePitch = 102
+End
+
+Tough+Shotgun Don
+	Skin = 1
+	VoicePitch = 95
+End
+
+Tough+Rifle Eric
+	Skin = 3
+	VoicePitch = 95
+End
+
+Tough+Rifle Erik
+	Skin = 1
+	VoicePitch = 110
+End
+
+Tough+Rifle Finn
+	Skin = 3
+	VoicePitch = 112
+End
+
+Tough Jeff
+	Skin = 1
+	VoicePitch = 90
+End
+
+Tough+Rifle Kevin
+	Skin = 3
+	VoicePitch = 115
+End
+
+Tough+Spray Quinn
+	Skin = 1
+	VoicePitch = 93
+End
+
+Tough+Rifle Reed
+	Skin = 3
+	VoicePitch = 107
+End
+
+Tough+Rifle Rick
+	Skin = 1
+	VoicePitch = 102
+End
+
+Tough Ted
+	Skin = 3
+	VoicePitch = 98
+End
+
+Tough+Rifle Troy
+	Skin = 1
+	VoicePitch = 100
+End
+
+Tough+Rifle Wade
+	Skin = 3
+	VoicePitch = 95
+End
+
+Tough+Rifle Wayne
+	Skin = 1
+	VoicePitch = 86
+End
+
+Tough+Rifle Xander
+	Skin = 3
+	VoicePitch = 100
+End
+
+Tough+Rifle Xavier
+	Skin = 1
+	VoicePitch = 95
+End
+
+Normal+Rifle Adam
+	Skin = 3
+	VoicePitch = 105
+End
+
+Normal+Power Andy
+	Skin = 1
+	VoicePitch = 90
+End
+
+Normal Chris
+	Skin = 3
+	VoicePitch = 100
+End
+
+Normal Colin
+	Skin = 1
+	VoicePitch = 107
+End
+
+Normal+Shield Dennis
+	Skin = 3
+	VoicePitch = 104
+End
+
+Normal Doug
+	Skin = 1
+	VoicePitch = 110
+End
+
+Normal Gary
+	Skin = 3
+	VoicePitch = 95
+End
+
+Normal Grant
+	Skin = 1
+	VoicePitch = 112
+End
+
+Normal Greg
+	Skin = 3
+	VoicePitch = 111
+End
+
+Normal+Sniper Ian
+	Skin = 1
+	Cost = 3
+	VoicePitch = 115
+End
+
+Normal Jerry
+	Skin = 3
+	VoicePitch = 112
+End
+
+Normal Jon
+	Skin = 1
+	VoicePitch = 96
+End
+
+Normal Keith
+	Skin = 3
+	VoicePitch = 98
+End
+
+Normal Mark
+	Skin = 1
+	VoicePitch = 110
+End
+
+Normal Matt
+	Skin = 3
+	VoicePitch = 95
+End
+
+Normal+Rifle Mike
+	Skin = 1
+	VoicePitch = 100
+End
+
+Normal Nate
+	Skin = 3
+	VoicePitch = 99
+End
+
+Normal Paul
+	Skin = 1
+	VoicePitch = 98
+End
+
+Normal Scott
+	Skin = 3
+	VoicePitch = 105
+End
+
+Normal Steve
+	Skin = 1
+	VoicePitch = 115
+End
+
+Normal Tom
+	Skin = 3
+	VoicePitch = 110
+End
+
+Normal Yahn
+	Skin = 1
+	VoicePitch = 92
+End
+
+Fair Alfred
+	Skin = 3
+	VoicePitch = 110
+End
+
+Fair Bill
+	Skin = 1
+	VoicePitch = 100
+End
+
+Fair Brandon
+	Skin = 3
+	VoicePitch = 99
+End
+
+Fair+Spray Calvin
+	Skin = 1
+	VoicePitch = 120
+End
+
+Fair Dean
+	Skin = 3
+	VoicePitch = 111
+End
+
+Fair Dustin
+	Skin = 1
+	VoicePitch = 98
+End
+
+Fair Ethan
+	Skin = 3
+	VoicePitch = 112
+End
+
+Fair Harold
+	Skin = 1
+	VoicePitch = 90
+End
+
+Fair Henry
+	Skin = 3
+	VoicePitch = 120
+End
+
+Fair Irving
+	Skin = 1
+	VoicePitch = 118
+End
+
+Fair Jason
+	Skin = 3
+	VoicePitch = 116
+End
+
+Fair Josh
+	Skin = 1
+	VoicePitch = 114
+End
+
+Fair Martin
+	Skin = 3
+	VoicePitch = 110
+End
+
+Fair Nick
+	Skin = 1
+	VoicePitch = 98
+End
+
+Fair Norm
+	Skin = 3
+	VoicePitch = 92
+End
+
+Fair Orin
+	Skin = 1
+	VoicePitch = 113
+End
+
+Fair Pat
+	Skin = 3
+	VoicePitch = 114
+End
+
+Fair Perry
+	Skin = 1
+	VoicePitch = 115
+End
+
+Fair Ron
+	Skin = 3
+	VoicePitch = 100
+End
+
+Fair Shawn
+	Skin = 1
+	VoicePitch = 102
+End
+
+Fair Tim
+	Skin = 3
+	VoicePitch = 98
+End
+
+Fair Will
+	Skin = 1
+	VoicePitch = 96
+End
+
+Fair Wyatt
+	Skin = 3
+	VoicePitch = 94
+End
+
+Easy Albert
+	Skin = 1
+	VoicePitch = 100
+End
+
+Easy Allen
+	Skin = 3
+	VoicePitch = 110
+End
+
+Easy Bert
+	Skin = 1
+	VoicePitch = 120
+End
+
+Easy Bob
+	Skin = 3
+	VoicePitch = 99
+End
+
+Easy Cecil
+	Skin = 1
+	VoicePitch = 120
+End
+
+Easy Clarence
+	Skin = 3
+	VoicePitch = 125
+End
+
+Easy Elliot
+	Skin = 1
+	VoicePitch = 110
+End
+
+Easy Elmer
+	Skin = 3
+	VoicePitch = 100
+End
+
+Easy Ernie
+	Skin = 1
+	VoicePitch = 112
+End
+
+Easy Eugene
+	Skin = 3
+	VoicePitch = 121
+End
+
+Easy Fergus
+	Skin = 1
+	VoicePitch = 99
+End
+
+Easy Ferris
+	Skin = 3
+	VoicePitch = 119
+End
+
+Easy Frank
+	Skin = 1
+	VoicePitch = 118
+End
+
+Easy Frasier
+	Skin = 3
+	VoicePitch = 117
+End
+
+Easy Fred
+	Skin = 1
+	VoicePitch = 116
+End
+
+Easy George
+	Skin = 3
+	VoicePitch = 115
+End
+
+Easy Graham
+	Skin = 1
+	VoicePitch = 114
+End
+
+Easy Harvey
+	Skin = 3
+	VoicePitch = 112
+End
+
+Easy Irwin
+	Skin = 1
+	VoicePitch = 111
+End
+
+Easy Lester
+	Skin = 3
+	VoicePitch = 110
+End
+
+Easy Marvin
+	Skin = 1
+	VoicePitch = 109
+End
+
+Easy Neil
+	Skin = 3
+	VoicePitch = 108
+End
+
+Easy Niles
+	Skin = 1
+	VoicePitch = 122
+End
+
+Easy Oliver
+	Skin = 3
+	VoicePitch = 120
+End
+
+Easy Opie
+	Skin = 1
+	VoicePitch = 125
+End
+
+Easy Toby
+	Skin = 3
+	VoicePitch = 92
+End
+
+Easy Ulric
+	Skin = 1
+	VoicePitch = 100
+End
+
+Easy Ulysses
+	Skin = 3
+	VoicePitch = 102
+End
+
+Easy Uri
+	Skin = 1
+	VoicePitch = 104
+End
+
+Easy Waldo
+	Skin = 3
+	VoicePitch = 108
+End
+
+Easy Wally
+	Skin = 1
+	VoicePitch = 95
+End
+
+Easy Walt
+	Skin = 3
+	VoicePitch = 100
+End
+
+Easy Wesley
+	Skin = 1
+	VoicePitch = 120
+End
+
+Easy Yanni
+	Skin = 3
+	VoicePitch = 112
+End
+
+Easy Yogi
+	Skin = 1
+	VoicePitch = 99
+End
+
+Easy Yuri
+	Skin = 3
+	VoicePitch = 110
+End
+
+
+//----------------------------------------------------------------------------
+//
+// Female bots - the ONLY profiles that use GSG9 (Skin = 2) / GIGN (Skin = 4)
+// GSG9 = English names only, GIGN = Japanese names only
+// All other bots above are remapped to Skin 1 / 3 (Urban,SAS | Terror,Arctic)
+//
+
+Fair Alice
+	Team = CT
+	Skin = 2
+	VoicePitch = 125
+End
+
+Fair Bella
+	Team = CT
+	Skin = 2
+	VoicePitch = 125
+End
+
+Normal Clara
+	Team = CT
+	Skin = 2
+	VoicePitch = 125
+End
+
+Normal+Rifle Diana
+	Team = CT
+	Skin = 2
+	VoicePitch = 125
+End
+
+Tough+Rifle Elena
+	Team = CT
+	Skin = 2
+	VoicePitch = 125
+End
+
+Tough+Sniper Fiona
+	Team = CT
+	Skin = 2
+	VoicePitch = 125
+	Cost = 3
+End
+
+Hard+Rifle Grace
+	Team = CT
+	Skin = 2
+	VoicePitch = 125
+End
+
+Hard+Spray Hannah
+	Team = CT
+	Skin = 2
+	VoicePitch = 125
+End
+
+Expert+Rifle Irene
+	Team = CT
+	Skin = 2
+	VoicePitch = 125
+End
+
+Expert+Sniper Julia
+	Team = CT
+	Skin = 2
+	VoicePitch = 125
+	Cost = 5
+End
+
+//----------------------------------------------------------------------------
+//
+// More female bots (Japanese names) - CT only, GIGN (Skin = 4)
+// Kanade (GIGN) / Luna (GSG9, English) are defined once per difficulty (Fair, Normal, Hard, Expert), same skin each time
+//
+
+Fair+Rifle Kanade
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Fair+Sniper Luna
+	Team = CT
+	Skin = 2
+	VoicePitch = 125
+	Cost = 3
+End
+
+Normal+Rifle Kanade
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Normal+Sniper Luna
+	Team = CT
+	Skin = 2
+	VoicePitch = 125
+	Cost = 3
+End
+
+Hard+Rifle Kanade
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Hard+Sniper Luna
+	Team = CT
+	Skin = 2
+	VoicePitch = 125
+	Cost = 4
+End
+
+Expert+Rifle Kanade
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Expert+Sniper Luna
+	Team = CT
+	Skin = 2
+	VoicePitch = 125
+	Cost = 5
+End
+
+Fair+Rifle Sakura
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Fair+Spray Hina
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Fair+Rifle Mio
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Normal+Rifle Yui
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Normal+Punch Rin
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Normal+Rifle Aoi
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Normal+Rifle Haruka
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Normal+Spray Mei
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Normal+Rifle Nanami
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Tough+Rifle Akari
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Tough+Punch Misaki
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Tough+Rifle Shiori
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Hard+Rifle Ayaka
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Hard+Punch Hikari
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Hard+Spray Kokona
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Hard+Rifle Riko
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Expert+Rifle Sora
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Expert+Punch Tsubasa
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
+
+Expert+Rifle Rei
+	Team = CT
+	Skin = 4
+	VoicePitch = 125
+End
